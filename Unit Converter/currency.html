@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+<div id="title">
+    <h1>Currency Converter</h1>
+</div>
+  <div id="main">
+      <navbar>
+      <ul>
+        <li><a href="temp.html">Temperature</a></li>
+        <li><a href="dist.html">Distance</a></li>
+        <li><a href="currency.html">Currency</a></li>
+      </ul>
+      </navbar>
+      <form id="currcalc" onsubmit="calc_curr(); return false">
+        <Label>Convert Currency</Label><br>
+        <input type="number" name="currency" id="mycurr">
+        <select name="curr_type" id="curr_type">
+          <option value="Rupee_to_dollar">Rupee_to_dollar</option>
+          <option value="Rupee_to_pound">Rupee_to_pound</option>
+          <option value="Dollar_to_rupee">Dollar_to_rupee</option>
+          <option value="Pound_to_rupee">Pound_to_rupee</option>
+        </select><br>
+        <input type="submit" id="btn" value="Convert">
+        <br>
+        <span id="ans"></span>
+      </form>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>
